@@ -1,344 +1,644 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5SQ36P5G5"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-T5SQ36P5G5');
-    </script>
+<head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gift Card Guide</title>
+    <title>Delta executor Download</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+
         :root {
-            --bg: #f7f8fc;
-            --text: #17181c;
-            --muted: #777b87;
-            --card: rgba(255, 255, 255, 0.75);
-            --border: rgba(0, 0, 0, 0.07);
-            --shadow: 0 15px 45px rgba(20, 25, 40, 0.08);
+
+            --black: #050505;
+            --black-light: #0b0b0b;
+            --black-card: #101010;
+
+            --red: #ff3b3b;
+            --red-light: #ff6262;
+            --red-dark: #d91f1f;
+
+            --text: #ffffff;
+            --muted: #b5b5b5;
+
         }
+
 
         html {
             scroll-behavior: smooth;
         }
 
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                         Roboto, Helvetica, Arial, sans-serif;
-            background: var(--bg);
+
+            font-family: 'Nunito', sans-serif;
+
             color: var(--text);
+
             min-height: 100vh;
+
             overflow-x: hidden;
+
+            background:
+
+                radial-gradient(
+                    circle at 50% -10%,
+                    rgba(255, 45, 45, 0.20),
+                    transparent 38%
+                ),
+
+                radial-gradient(
+                    circle at 0% 50%,
+                    rgba(255, 40, 40, 0.08),
+                    transparent 35%
+                ),
+
+                radial-gradient(
+                    circle at 100% 60%,
+                    rgba(255, 40, 40, 0.08),
+                    transparent 35%
+                ),
+
+                linear-gradient(
+                    180deg,
+                    #050505 0%,
+                    #080808 50%,
+                    #030303 100%
+                );
+
         }
 
-        /* -------------------------
-           BACKGROUND
-        ------------------------- */
+
+        /* =========================================
+           BACKGROUND GLOW
+        ========================================= */
 
         .background-glow {
+
             position: fixed;
-            width: 500px;
-            height: 500px;
+
+            width: 650px;
+            height: 650px;
+
             border-radius: 50%;
-            background: rgba(100, 120, 255, 0.08);
-            filter: blur(100px);
-            top: -220px;
+
+            background:
+                rgba(255, 40, 40, 0.12);
+
+            filter: blur(140px);
+
+            top: -420px;
+
             left: 50%;
+
             transform: translateX(-50%);
+
             pointer-events: none;
+
             z-index: -1;
+
         }
 
-        /* -------------------------
-           MAIN
-        ------------------------- */
+
+        /* =========================================
+           MAIN CONTAINER
+        ========================================= */
 
         .container {
-            width: min(100% - 40px, 900px);
-            margin: auto;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 70px 0;
-        }
 
-        /* -------------------------
-           HERO
-        ------------------------- */
-
-        .hero {
-            text-align: center;
-            max-width: 650px;
-            margin-bottom: 55px;
-            animation: fadeUp 0.8s ease forwards;
-        }
-
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-
-            padding: 8px 14px;
-            border-radius: 50px;
-
-            background: rgba(255, 255, 255, 0.75);
-            border: 1px solid var(--border);
-
-            color: #666b78;
-            font-size: 13px;
-            font-weight: 600;
-
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
-
-            margin-bottom: 22px;
-        }
-
-        .badge-dot {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: #35c875;
-            box-shadow: 0 0 0 4px rgba(53, 200, 117, 0.12);
-        }
-
-        h1 {
-            font-size: clamp(38px, 6vw, 68px);
-            line-height: 1.02;
-            letter-spacing: -2.8px;
-            font-weight: 750;
-            margin-bottom: 20px;
-        }
-
-        .gradient-text {
-            background: linear-gradient(
-                100deg,
-                #17181c,
-                #555b68
+            width: min(
+                calc(100% - 30px),
+                850px
             );
 
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .hero p {
-            max-width: 540px;
             margin: auto;
 
-            color: var(--muted);
+            padding-top: 75px;
+
+            padding-bottom: 70px;
+
+        }
+
+
+        /* =========================================
+           HERO
+        ========================================= */
+
+        .hero {
+
+            text-align: center;
+
+            max-width: 720px;
+
+            margin: 0 auto 35px;
+
+            animation:
+                fadeUp 0.8s ease forwards;
+
+        }
+
+
+        /* =========================================
+           BADGE
+        ========================================= */
+
+        .badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            padding: 9px 16px;
+
+            border-radius: 50px;
+
+            background:
+                rgba(255, 255, 255, 0.045);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.10);
+
+            color: #ffffff;
+
+            font-size: 13px;
+
+            font-weight: 800;
+
+            box-shadow:
+                0 8px 30px
+                rgba(0, 0, 0, 0.25);
+
+            margin-bottom: 20px;
+
+            backdrop-filter: blur(10px);
+
+        }
+
+
+        .badge-dot {
+
+            width: 8px;
+            height: 8px;
+
+            border-radius: 50%;
+
+            background: var(--red);
+
+            box-shadow:
+                0 0 0 4px
+                rgba(255, 59, 59, 0.12),
+
+                0 0 15px
+                rgba(255, 59, 59, 0.6);
+
+        }
+
+
+        /* =========================================
+           TITLE
+        ========================================= */
+
+        h1 {
+
+            font-size:
+                clamp(39px, 6vw, 65px);
+
+            line-height: 1.03;
+
+            letter-spacing: -2.7px;
+
+            font-weight: 800;
+
+            color: #ffffff;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .gradient-text {
+
+            background:
+
+                linear-gradient(
+                    100deg,
+                    #ff3030,
+                    #ff5555,
+                    #ff8585
+                );
+
+            -webkit-background-clip: text;
+
+            background-clip: text;
+
+            color: transparent;
+
+        }
+
+
+        /* =========================================
+           HERO DESCRIPTION
+        ========================================= */
+
+        .hero-description {
+
+            max-width: 610px;
+
+            margin: auto;
+
+            color: #bdbdbd;
+
             font-size: 17px;
-            line-height: 1.65;
+
+            line-height: 1.7;
+
+            font-weight: 500;
+
         }
 
-        /* -------------------------
-           CARDS
-        ------------------------- */
 
-        .gift-cards {
-            width: 100%;
+        /* =========================================
+           GUIDE SECTION
+        ========================================= */
 
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-        }
+        .guide-card {
 
-        .gift-card {
             position: relative;
 
-            min-height: 220px;
+            overflow: visible;
 
-            border-radius: 24px;
+            padding: 0;
 
-            border: 1px solid var(--border);
+            background: transparent;
 
-            background: var(--card);
+            border: none;
 
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
+            box-shadow: none;
 
-            box-shadow: var(--shadow);
+            opacity: 0;
+
+            transform: translateY(25px);
+
+            animation:
+                cardAppear
+                0.8s ease
+                0.15s forwards;
+
+        }
+
+
+        /* =========================================
+           GIFT CARD IMAGE
+        ========================================= */
+
+        .cardsbox {
+
+            position: relative;
+
+            z-index: 2;
 
             display: flex;
-            flex-direction: column;
-            align-items: center;
+
             justify-content: center;
 
-            text-decoration: none;
-            color: var(--text);
+            align-items: center;
+
+            margin: 30px auto 30px;
+
+            padding: 0;
+
+        }
+
+
+        .cardsbox img {
+
+            width: min(
+                100%,
+                430px
+            );
+
+            height: auto;
+
+            object-fit: contain;
+
+            border-radius: 18px;
+
+            filter:
+
+                drop-shadow(
+                    0 28px 45px
+                    rgba(0, 0, 0, 0.65)
+                )
+
+                drop-shadow(
+                    0 0 25px
+                    rgba(255, 40, 40, 0.10)
+                );
+
+            transition:
+                transform 0.4s ease;
+
+        }
+
+
+        .cardsbox img:hover {
+
+            transform:
+                translateY(-8px)
+                scale(1.02);
+
+        }
+
+
+        /* =========================================
+           CTA
+        ========================================= */
+
+        .download-container {
+
+            position: relative;
+
+            z-index: 3;
+
+            display: flex;
+
+            justify-content: center;
+
+            margin: 15px 0 35px;
+
+        }
+
+
+        .linkbutton {
+
+            position: relative;
+
+            width: min(
+                100%,
+                330px
+            );
+
+            height: 60px;
+
+            border: none;
+
+            border-radius: 17px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #d91f1f,
+                    #f12e2e,
+                    #ff5555
+                );
+
+            color: white;
+
+            font-family: inherit;
+
+            font-size: 16px;
+
+            font-weight: 800;
+
+            cursor: pointer;
 
             overflow: hidden;
 
-            opacity: 0;
-            transform: translateY(30px);
+            box-shadow:
 
-            animation: cardAppear 0.7s ease forwards;
+                0 14px 35px
+                rgba(255, 35, 35, 0.20);
 
             transition:
-                transform 0.35s ease,
-                box-shadow 0.35s ease,
-                border-color 0.35s ease;
+
+                transform 0.3s ease,
+
+                box-shadow 0.3s ease;
+
         }
 
-        .gift-card:nth-child(1) {
-            animation-delay: 0.15s;
-        }
 
-        .gift-card:nth-child(2) {
-            animation-delay: 0.25s;
-        }
+        /* =========================================
+           BUTTON SHIMMER
+        ========================================= */
 
-        .gift-card:nth-child(3) {
-            animation-delay: 0.35s;
-        }
+        .linkbutton::before {
 
-        .gift-card::before {
             content: "";
 
             position: absolute;
-            inset: 0;
+
+            top: 0;
+
+            left: -110%;
+
+            width: 70%;
+
+            height: 100%;
 
             background:
-                radial-gradient(
-                    circle at 50% 0%,
-                    rgba(255,255,255,0.8),
-                    transparent 55%
+
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(255,255,255,0.30),
+                    transparent
                 );
 
-            opacity: 0;
-            transition: opacity 0.35s ease;
-        }
-
-        .gift-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 60px rgba(20, 25, 40, 0.13);
-            border-color: rgba(0, 0, 0, 0.1);
-        }
-
-        .gift-card:hover::before {
-            opacity: 1;
-        }
-
-        /* -------------------------
-           LOGO
-        ------------------------- */
-
-        .logo-container {
-            position: relative;
-            z-index: 2;
-
-            width: 82px;
-            height: 82px;
-
-            border-radius: 22px;
-
-            background: #fff;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            box-shadow:
-                0 10px 30px rgba(0, 0, 0, 0.08),
-                inset 0 0 0 1px rgba(0, 0, 0, 0.04);
-
-            margin-bottom: 19px;
+            transform:
+                skewX(-20deg);
 
             transition:
-                transform 0.35s ease,
-                box-shadow 0.35s ease;
+                left 0.6s ease;
+
         }
 
-        .gift-card:hover .logo-container {
-            transform: scale(1.07);
+
+        .linkbutton:hover {
+
+            transform:
+                translateY(-4px);
+
             box-shadow:
-                0 15px 35px rgba(0, 0, 0, 0.11),
-                inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+
+                0 19px 45px
+                rgba(255, 35, 35, 0.30);
+
         }
 
-        .logo-container img {
-            width: 48px;
-            height: 48px;
-            object-fit: contain;
+
+        .linkbutton:hover::before {
+
+            left: 145%;
+
         }
 
-        .gift-name {
+
+        .linkbutton:active {
+
+            transform:
+                scale(0.96);
+
+        }
+
+
+        /* =========================================
+           SECOND IMAGE
+        ========================================= */
+
+        .content-image-container {
+
             position: relative;
+
             z-index: 2;
 
-            font-size: 16px;
-            font-weight: 700;
+            display: flex;
 
-            margin-bottom: 6px;
+            justify-content: center;
+
+            margin-top: 10px;
+
         }
 
-        .gift-description {
-            position: relative;
-            z-index: 2;
 
-            font-size: 13px;
-            color: var(--muted);
+        .content-image {
+
+            width: 100%;
+
+            max-width: 760px;
+
+            height: auto;
+
+            display: block;
+
+            border-radius: 18px;
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.08);
+
+            box-shadow:
+
+                0 20px 55px
+                rgba(0, 0, 0, 0.55);
+
+            transition:
+                transform 0.4s ease;
+
         }
 
-        /* -------------------------
+
+        .content-image:hover {
+
+            transform:
+                translateY(-4px);
+
+        }
+
+
+        /* =========================================
            FOOTER
-        ------------------------- */
+        ========================================= */
 
         .footer {
-            margin-top: 50px;
-
-            font-size: 12px;
-            color: #9a9da7;
 
             text-align: center;
 
-            animation: fadeIn 1s ease 0.6s forwards;
+            color: #666666;
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+            margin-top: 30px;
+
             opacity: 0;
+
+            animation:
+                fadeIn
+                1s ease
+                0.7s forwards;
+
         }
 
-        /* -------------------------
+
+        /* =========================================
            ANIMATIONS
-        ------------------------- */
+        ========================================= */
 
         @keyframes fadeUp {
+
             from {
+
                 opacity: 0;
-                transform: translateY(25px);
+
+                transform:
+                    translateY(25px);
+
             }
 
             to {
+
                 opacity: 1;
-                transform: translateY(0);
+
+                transform:
+                    translateY(0);
+
             }
+
         }
+
 
         @keyframes cardAppear {
+
             from {
+
                 opacity: 0;
-                transform: translateY(30px);
+
+                transform:
+                    translateY(25px);
+
             }
 
             to {
+
                 opacity: 1;
-                transform: translateY(0);
+
+                transform:
+                    translateY(0);
+
             }
+
         }
+
 
         @keyframes fadeIn {
+
             from {
                 opacity: 0;
             }
@@ -346,365 +646,362 @@
             to {
                 opacity: 1;
             }
+
         }
 
-        /* -------------------------
+
+        /* =========================================
            MOBILE
-        ------------------------- */
+        ========================================= */
 
-        @media (max-width: 700px) {
+        
+@media screen and (max-width: 650px) {
 
-            .container {
-                width: min(100% - 28px, 500px);
-                padding: 45px 0;
-            }
+    .container {
 
-            .hero {
-                margin-bottom: 35px;
-            }
+        width: 100%;
 
-            h1 {
-                font-size: clamp(38px, 12vw, 52px);
-                letter-spacing: -2px;
-            }
+        padding-left: 16px;
+        padding-right: 16px;
 
-            .hero p {
-                font-size: 15px;
-                line-height: 1.6;
-                padding: 0 5px;
-            }
+        padding-top: 50px;
+        padding-bottom: 45px;
 
-            .gift-cards {
-                grid-template-columns: 1fr;
-                gap: 13px;
-            }
+    }
 
-            .gift-card {
-                min-height: 115px;
+    .hero {
+        margin-bottom: 25px;
+    }
 
-                flex-direction: row;
-                justify-content: flex-start;
+    .badge {
+        font-size: 12px;
+        padding: 8px 13px;
+    }
 
-                padding: 18px 20px;
+    h1 {
+        font-size: clamp(36px, 11vw, 50px);
+        letter-spacing: -1.8px;
+        margin-bottom: 15px;
+    }
 
-                border-radius: 20px;
-            }
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.65;
+        padding: 0 5px;
+    }
 
-            .logo-container {
-                width: 68px;
-                height: 68px;
+    .cardsbox {
+        margin: 25px auto;
+    }
 
-                border-radius: 18px;
+    .cardsbox img {
+        width: 100%;
+        border-radius: 15px;
+    }
 
-                margin-bottom: 0;
-                margin-right: 17px;
+    .download-container {
+        margin: 12px 0 30px;
+    }
 
-                flex-shrink: 0;
-            }
+    .linkbutton {
+        width: 100%;
+        height: 57px;
+        border-radius: 15px;
+    }
 
-            .logo-container img {
-                width: 40px;
-                height: 40px;
-            }
+    .content-image-container {
+        margin-top: 5px;
+    }
 
-            .gift-info {
-                text-align: left;
-            }
+    .content-image {
+        border-radius: 14px;
+    }
 
-            .gift-name {
-                margin-bottom: 4px;
-                font-size: 15px;
-            }
+    .footer {
+        margin-top: 25px;
+    }
+}
 
-            .gift-description {
-                font-size: 12px;
-            }
 
-            .footer {
-                margin-top: 35px;
-            }
-        }
 
-        /* -------------------------
+            .contain2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1vh;
+}
+
+        /* =========================================
            SMALL PHONES
-        ------------------------- */
+        ========================================= */
 
-        @media (max-width: 380px) {
+        @media screen and (max-width: 380px) {
 
             .container {
-                width: calc(100% - 22px);
+
+                width:
+                    calc(100% - 18px);
+
             }
 
-            .gift-card {
-                padding: 14px;
-            }
-
-            .logo-container {
-                width: 60px;
-                height: 60px;
-            }
-
-            .logo-container img {
-                width: 36px;
-                height: 36px;
-            }
         }
 
-        /* -------------------------
+
+        /* =========================================
            REDUCED MOTION
-        ------------------------- */
+        ========================================= */
 
         @media (prefers-reduced-motion: reduce) {
-            *,
-            *::before,
-            *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
+
+            * {
+
+                animation-duration:
+                    0.01ms !important;
+
+                animation-iteration-count:
+                    1 !important;
+
+                transition-duration:
+                    0.01ms !important;
+
             }
+
         }
-        /* -------------------------
-   CLICK EFFECT
-------------------------- */
 
-.gift-card {
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease,
-        border-color 0.35s ease,
-        background 0.35s ease;
-}
-
-.gift-card.selected {
-    background: linear-gradient(
-        135deg,
-        #e8ebff,
-        #ffffff
-    );
-
-    border-color: rgba(90, 100, 255, 0.35);
-
-    box-shadow:
-        0 0 0 4px rgba(90, 100, 255, 0.08),
-        0 20px 55px rgba(90, 100, 255, 0.18);
-
-    transform: scale(0.97);
-}
-
-.gift-card.selected .logo-container {
-    transform: scale(1.08);
-    box-shadow:
-        0 0 0 5px rgba(90, 100, 255, 0.10),
-        0 12px 35px rgba(0, 0, 0, 0.10);
-}
-
-.gift-card.selected .gift-name {
-    color: #5865f2;
-}
     </style>
+
 </head>
+
 
 <body>
 
+
     <div class="background-glow"></div>
+
 
     <main class="container">
 
+
+        <!-- HERO -->
+
         <section class="hero">
 
+
             <div class="badge">
+
                 <span class="badge-dot"></span>
-                Gift Card Guide
+
+                Delta executor
+
             </div>
 
+
             <h1>
-                Find your next
-                <span class="gradient-text">gift card.</span>
+
+                Delta executor 
+
+                <span class="gradient-text">
+                    Download IOS/Android
+                </span>
+
             </h1>
 
-            <p>
-                Explore our simple guides and discover how to get
-                gift cards for your favorite platforms.
+
+            <p class="hero-description">
+
+                Download Delta executor for mobile version on both ios and android
+
             </p>
 
-        </section>
-
-
-        <section class="gift-cards">
-<a href="mimicparty.html" class="gift-card">
-
-                <div class="logo-container">
-                    <img
-                        src="https://gaming-cdn.com/images/products/23825/616x353/mimic-party-pc-steam-cover.jpg?v=1788255744"
-                        alt="PlayStation"
-                    >
-                </div>
-
-                <div class="gift-info">
-                    <div class="gift-name">
-                        Mimic party
-                    </div>
-
-                    <div class="gift-description">
-                        Mimic party mobile download
-                    </div>
-                </div>
-
-        <a href="eabw.html" class="gift-card">
-
-                <div class="logo-container">
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIK6UANmIGnAbKY36eNDsiUOiSjNG8Us-7OkS77jMAxQ&s=10"
-                        alt="PlayStation"
-                    >
-                </div>
-
-                <div class="gift-info">
-                    <div class="gift-name">
-                        Elite auto brasil wheelie mod
-                    </div>
-
-                    <div class="gift-description">
-                        Elite auto brasil wheelie mod download
-                    </div>
-                </div>
-
-            </a>
-            <!-- PLAYSTATION -->
-
-            <a href="playstation.html" class="gift-card">
-
-                <div class="logo-container">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/0/00/PlayStation_logo.svg"
-                        alt="PlayStation"
-                    >
-                </div>
-
-                <div class="gift-info">
-                    <div class="gift-name">
-                        PlayStation
-                    </div>
-
-                    <div class="gift-description">
-                        View PlayStation guide
-                    </div>
-                </div>
-
-            </a>
-
-
-            <!-- ROBLOX -->
-
-            <a href="roblox.html" class="gift-card">
-
-                <div class="logo-container">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Roblox_Logo_2022.jpg"
-                        alt="Roblox"
-                    >
-                </div>
-
-                <div class="gift-info">
-                    <div class="gift-name">
-                        Roblox
-                    </div>
-
-                    <div class="gift-description">
-                        View Roblox guide
-                    </div>
-                </div>
-
-            </a>
-
-
-            <!-- AMAZON -->
-
-            <a href="amazon.html" class="gift-card">
-
-                <div class="logo-container">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
-                        alt="Amazon"
-                    >
-                </div>
-
-                <div class="gift-info">
-                    <div class="gift-name">
-                        Amazon
-                    </div>
-
-                    <div class="gift-description">
-                        View Amazon guide
-                    </div>
-                </div>
-
-            </a>
 
         </section>
+
+
+
+        <!-- CONTENT -->
+
+        <section class="guide-card">
+
+
+            <!-- ROBLOX GIFT CARD IMAGE -->
+
+            <div class="cardsbox">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7bEoCwhqohfOdLv3YKqOVa1tPOmM97hGdiYCCmTmvg&s=10"
+                    alt="Roblox Gift Card"
+                >
+
+            </div>
+
+            <div class="contain2">
+            <div
+                data-captcha-enable="true"
+            ></div>
+                </div>
+            <!-- CTA -->
+
+            <div class="download-container">
+
+                <button
+                    class="linkbutton"
+                    id="downloadButton"
+                >
+
+                    Download Executor
+
+                </button>
+
+            </div>
+
+
+
+            <!-- SECOND IMAGE -->
+
+            
+
+
+
+            <!-- CAPTCHA -->
+
+            
+
+
+        </section>
+
 
 
         <div class="footer">
-            © 2026 codez67 · All rights reserved
+
+            codez67 · 2026
+
         </div>
+
 
     </main>
 
+    <script type="text/javascript"src="https://lockedapp.net/cp/js/30oqk"></script>
 
     <script>
 
-    const cards = document.querySelectorAll(".gift-card");
 
-    cards.forEach(card => {
+        /* =========================================
+           BUTTON CLICK EFFECT
+        ========================================= */
 
-        // Mouse tilt effect
-        card.addEventListener("mousemove", (e) => {
-
-            if (window.innerWidth <= 700) return;
-
-            const rect = card.getBoundingClientRect();
-
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-
-            const rotateX =
-                ((y - centerY) / centerY) * -2;
-
-            const rotateY =
-                ((x - centerX) / centerX) * 2;
-
-            card.style.transform =
-                `translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-        });
+        const downloadButton =
+            document.getElementById(
+                "downloadButton"
+            );
 
 
-        card.addEventListener("mouseleave", () => {
-            card.style.transform = "";
-        });
+        downloadButton.addEventListener(
+            "click",
+            function () {
+
+                this.style.transform =
+                    "scale(0.95)";
 
 
-        // CLICK EFFECT
-        card.addEventListener("click", function(e) {
+                setTimeout(() => {
 
-            // Prevent the page from navigating immediately
-            e.preventDefault();
+                    this.style.transform =
+                        "";
 
-            // Add selected effect
-            this.classList.add("selected");
+                }, 180);
 
-            // Navigate after animation
-            setTimeout(() => {
-                window.location.href = this.href;
-            }, 350);
 
-        });
+                /*
+                    ADD YOUR DOWNLOAD /
+                    REDIRECT CODE HERE.
 
-    });
+                    Example:
 
-</script>
+                    window.location.href =
+                        "download.html";
+                */
+
+            }
+        );
+
+
+
+        /* =========================================
+           GIFT CARD TILT EFFECT
+        ========================================= */
+
+        const giftImage =
+            document.querySelector(
+                ".cardsbox img"
+            );
+
+
+        giftImage.addEventListener(
+            "mousemove",
+            function (event) {
+
+                if (window.innerWidth <= 650)
+                    return;
+
+
+                const rect =
+                    giftImage.getBoundingClientRect();
+
+
+                const x =
+                    event.clientX -
+                    rect.left;
+
+
+                const y =
+                    event.clientY -
+                    rect.top;
+
+
+                const centerX =
+                    rect.width / 2;
+
+
+                const centerY =
+                    rect.height / 2;
+
+
+                const rotateX =
+                    ((y - centerY) /
+                    centerY) * -2;
+
+
+                const rotateY =
+                    ((x - centerX) /
+                    centerX) * 2;
+
+
+                giftImage.style.transform =
+
+                    `perspective(800px)
+                     rotateX(${rotateX}deg)
+                     rotateY(${rotateY}deg)
+                     translateY(-5px)`;
+
+            }
+        );
+
+
+        giftImage.addEventListener(
+            "mouseleave",
+            function () {
+
+                giftImage.style.transform =
+                    "";
+
+            }
+        );
+
+
+    </script>
+
 
 </body>
+
 </html>
+
